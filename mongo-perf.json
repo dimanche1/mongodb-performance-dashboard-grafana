@@ -147,7 +147,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   }
                 ]
               }
@@ -255,7 +256,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "dark-green"
+                    "color": "dark-green",
+                    "value": null
                   }
                 ]
               },
@@ -414,7 +416,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -430,14 +433,15 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 6
+            "y": 2
           },
           "id": 4,
           "options": {
             "legend": {
               "calcs": [
-                "sum",
-                "mean"
+                "lastNotNull",
+                "mean",
+                "max"
               ],
               "displayMode": "table",
               "placement": "right",
@@ -996,7 +1000,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1033,7 +1038,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 6
+            "y": 2
           },
           "id": 3,
           "options": {
@@ -1368,7 +1373,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1384,12 +1390,16 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 15
+            "y": 11
           },
           "id": 2,
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                "lastNotNull",
+                "mean",
+                "max"
+              ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true
@@ -1597,7 +1607,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1613,7 +1624,7 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 15
+            "y": 11
           },
           "id": 36,
           "options": {
@@ -1830,7 +1841,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -1846,7 +1858,7 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 24
+            "y": 20
           },
           "id": 35,
           "options": {
@@ -1987,7 +1999,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -2003,12 +2016,16 @@
             "h": 9,
             "w": 12,
             "x": 12,
-            "y": 24
+            "y": 20
           },
           "id": 7,
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                "lastNotNull",
+                "mean",
+                "max"
+              ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true
@@ -2523,34 +2540,7 @@
               },
               "unit": "none"
             },
-            "overrides": [
-              {
-                "__systemRef": "hideSeriesFrom",
-                "matcher": {
-                  "id": "byNames",
-                  "options": {
-                    "mode": "exclude",
-                    "names": [
-                      "current | 127.0.0.1:27018 | SEC | rs0",
-                      "current | 127.0.0.1:27017 | PRI | rs0",
-                      "current | 127.0.0.1:27019 | SEC | rs0"
-                    ],
-                    "prefix": "All except:",
-                    "readOnly": true
-                  }
-                },
-                "properties": [
-                  {
-                    "id": "custom.hideFrom",
-                    "value": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": true
-                    }
-                  }
-                ]
-              }
-            ]
+            "overrides": []
           },
           "gridPos": {
             "h": 9,
@@ -2561,7 +2551,11 @@
           "id": 27,
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                "lastNotNull",
+                "mean",
+                "max"
+              ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true
@@ -2775,7 +2769,11 @@
           "id": 28,
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                "lastNotNull",
+                "mean",
+                "max"
+              ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true
@@ -2989,7 +2987,11 @@
           "id": 29,
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                "lastNotNull",
+                "mean",
+                "max"
+              ],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true
@@ -3135,7 +3137,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -3151,7 +3154,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 8
+            "y": 4
           },
           "id": 19,
           "options": {
@@ -3286,7 +3289,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -3302,7 +3306,7 @@
             "h": 8,
             "w": 12,
             "x": 12,
-            "y": 8
+            "y": 4
           },
           "id": 20,
           "options": {
@@ -3457,7 +3461,8 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green"
+                    "color": "green",
+                    "value": null
                   },
                   {
                     "color": "red",
@@ -3473,7 +3478,7 @@
             "h": 10,
             "w": 24,
             "x": 0,
-            "y": 9
+            "y": 13
           },
           "id": 31,
           "options": {
@@ -3899,6 +3904,6 @@
   "timezone": "",
   "title": "MongoDB Performance Monitoring",
   "uid": "yRYn-rmVk",
-  "version": 82,
+  "version": 89,
   "weekStart": ""
 }
